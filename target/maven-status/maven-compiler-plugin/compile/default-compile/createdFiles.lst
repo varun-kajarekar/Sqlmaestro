@@ -1,0 +1,7 @@
+com\sqlmaestro\sqlmaestro\service\SqlQueryServiceImpl.class
+com\sqlmaestro\sqlmaestro\service\SqlQueryService.class
+com\sqlmaestro\sqlmaestro\repository\SqlQueryRepo.class
+com\sqlmaestro\sqlmaestro\repository\SqlQueryRepoImpl.class
+com\sqlmaestro\sqlmaestro\SqlmaestroApplication.class
+com\sqlmaestro\sqlmaestro\entity\QueryRequest.class
+com\sqlmaestro\sqlmaestro\controller\SqlQueryConstroller.class
