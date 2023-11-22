@@ -3,10 +3,14 @@ package com.sqlmaestro.sqlmaestro.service;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.http.ResponseEntity;
+
 public interface SqlQueryService {
 
-    List<Map<String, Object>> RunSqlQuery(String query);
+    ResponseEntity<List<Map<String, Object>>> RunSqlQuery(String query);
 
-    List<Map<String, Object>> GetAllTables();
+    ResponseEntity<Map<String,List<Map<String, Object>>>> GetAllTables();
+
+    ResponseEntity<List<String>> getTableNames();
     
 }
