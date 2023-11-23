@@ -16,7 +16,7 @@ import com.sqlmaestro.sqlmaestro.service.SqlQueryService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
-@CrossOrigin("http://127.0.0.1:5173/")
+@CrossOrigin()
 @RestController
 @RequestMapping("/api/v1")
 public class SqlQueryConstroller {
