@@ -1,9 +1,7 @@
 CREATE TABLE products (
   product_id INT PRIMARY KEY AUTO_INCREMENT,
   product_name VARCHAR(255) NOT NULL,
-  product_description TEXT,
   product_price DECIMAL(10,2) NOT NULL,
-  product_image_url VARCHAR(255),
   product_category VARCHAR(50) NOT NULL
 );
 
@@ -29,15 +27,15 @@ CREATE TABLE customers (
   shipping_address VARCHAR(255) NOT NULL
 );
 
-INSERT INTO products (product_name, product_description, product_price, product_image_url, product_category) VALUES
-('Men T-Shirt', 'A comfortable and stylish T-shirt for men.', 24.99, 'https://www.example.com/images/mens-t-shirt.jpg', 'Apparel'),
-('Women Jeans', 'A pair of stylish and comfortable jeans for women.', 49.99, 'https://www.example.com/images/womens-jeans.jpg', 'Apparel'),
-('Laptop', 'A powerful and versatile laptop for everyday use.', 799.99, 'https://www.example.com/images/laptop.jpg', 'Electronics'),
-('Smartphone', 'A sleek and powerful smartphone with the latest features.', 599.99, 'https://www.example.com/images/smartphone.jpg', 'Electronics'),
-('Book', 'A captivating and thought-provoking novel.', 19.99, 'https://www.example.com/images/book.jpg', 'Books'),
-('Headphones', 'A pair of high-quality headphones for listening to music.', 49.99, 'https://www.example.com/images/headphones.jpg', 'Electronics'),
-('Speakers', 'A pair of powerful speakers for enjoying music and movies.', 99.99, 'https://www.example.com/images/speakers.jpg', 'Electronics'),
-('Coffee Maker', 'A convenient and stylish coffee maker for brewing delicious coffee.', 69.99, 'https://www.example.com/images/coffee-maker.jpg', 'Home Goods');
+INSERT INTO products (product_name,  product_price,  product_category) VALUES
+('Men T-Shirt',  24.99,  'Apparel'),
+('Women Jeans',  49.99,  'Apparel'),
+('Laptop', 799.99,  'Electronics'),
+('Smartphone',  599.99,  'Electronics'),
+('Book',  19.99, 'Books'),
+('Headphones', 49.99,  'Electronics'),
+('Speakers', 99.99,  'Electronics'),
+('Coffee Maker',  69.99,  'Home Goods');
 
 INSERT INTO orders (customer_id, order_date, order_status) VALUES
 (1, '2023-11-20', 'Processing'),
